@@ -1,3 +1,6 @@
+from banking_pkg import account
+
+
 def atm_menu(name):
     print("")
     print("          === Automated Teller Machine ===          ")
@@ -25,6 +28,18 @@ while True:
     else:
         print("Invalid credentials")
         continue
+
 while True:
     atm_menu(name)
     option = input("Choose an option:")
+    if option == "1":
+        account.show_balance(balance)
+    elif option == "2":
+        balance = account.deposit(balance)
+    elif option == "3":
+        balance = account.withdraw(balance)
+    elif option == "4":
+        account.show_balance(balance)
+    else:
+        print("Please enter a valid value")
+        continue

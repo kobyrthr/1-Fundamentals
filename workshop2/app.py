@@ -39,7 +39,8 @@ while True:
     elif option == "3":
         balance = account.withdraw(balance)
     elif option == "4":
-        account.show_balance(balance)
+        account.logout(name)
+        break
     else:
         print("Please enter a valid value")
         continue

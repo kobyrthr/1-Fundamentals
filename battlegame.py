@@ -1,6 +1,3 @@
-#VARIABLES
-
-
 
 def game():
     wizard ="Wizard"
@@ -73,7 +70,8 @@ def game():
 while True:
     game()
     restart = input("Would you like to play again?: (Y/N)")
-    if restart == "n":
+    if restart == "n" or "N":
         break
-    elif restart == 'y':
+    if restart == 'y' or "Y":
         continue
+   

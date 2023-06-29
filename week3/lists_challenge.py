@@ -10,4 +10,6 @@ while diamonds:
     if user_choice.lower() == "q":
         break
     else:
-        
+        drawn_card = random.choice(diamonds)
+        hand = hand.append(diamonds.pop(diamonds[drawn_card]))
+        print(len(diamonds))
